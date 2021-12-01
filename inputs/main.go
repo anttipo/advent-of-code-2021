@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func readStrings(filepath string) []string {
+func ReadStrings(filepath string) []string {
 	file, err := os.Open(filepath)
 	if err != nil {
 		log.Fatal(err)
@@ -32,7 +32,7 @@ func readStrings(filepath string) []string {
 	return data
 }
 
-func readInts(filepath string) []int {
+func ReadInts(filepath string) []int {
 	file, err := os.Open(filepath)
 	if err != nil {
 		log.Fatal(err)
